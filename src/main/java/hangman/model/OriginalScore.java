@@ -11,6 +11,7 @@ public class OriginalScore implements GameScore{
     */
 
     public int OriginalScore(int correctCount, int incorrectCount){
+        return 0;
         
     }
 

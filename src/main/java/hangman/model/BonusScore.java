@@ -9,6 +9,7 @@ public class BonusScore implements GameScore{
     @throws SCORE_INVALID(cuando el puntaje sea negativo)
     */
     public int BonusScore(int correctCount, int incorrectCount){
+        return 0;
     }
 
 }

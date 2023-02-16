@@ -9,6 +9,7 @@ public class PowerScore implements GameScore{
     @throws SCORE_INVALID(cuando el puntaje sea negativo o mayor a 500)
     */
     public int PowerScore(int correctCount, int incorrectCount){
+        return 0;
 
     }
 
