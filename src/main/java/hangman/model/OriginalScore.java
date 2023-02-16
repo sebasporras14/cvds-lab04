@@ -1,5 +1,5 @@
 package hangman.model;
-
+import com.google.inject.Singleton;
 public class OriginalScore implements GameScore{
 
      /** 
@@ -9,9 +9,13 @@ public class OriginalScore implements GameScore{
     @param cantidad de intentos correctos(correctCount), cantidada de intentos incorrectos(incorrectCount), 
     @throws SCORE_INVALID(cuando el puntaje sea negativo)
     */
-
-    public int OriginalScore(int correctCount, int incorrectCount){
-        return 0;
+    @Override
+    public int calculateScore(int correctCount, int incorrectCount){
+        int score = 100 - (incorrectCount * 10);
+        if (score < 0){
+            score = 0;
+        }
+        return score;
         
     }
 
